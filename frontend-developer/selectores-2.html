@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selectores 2</title>
+  <style>
+    div p {
+      /* p descendientes de div*/
+      color: Lime;
+    }
+
+    div>div {
+      /*Hijos div directos de un div*/
+      background: plum;
+    }
+
+    .son {
+      background: red;
+    }
+
+    div+section {
+      /*Elementos section adyacentes a un div*/
+      background: palevioletred;
+    }
+
+    section~p {
+      color: aquamarine;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p>Me </p>
+    <p>gustan</p>
+    <p>las hamburguesas</p>
+    <div>div hijo de div</div>
+    <div class=son>div hijo de div pero con clase</div>
+  </div>
+  <section>
+    Las hamburguesas son lo maximo
+  </section>
+  <p>Clase de selectores</p>
+  <p>Clase de selectores 2</p>
+  <p>Clase de selectores 3</p>
+  <p>Clase de selectores 4</p>
+</body>
+
+</html>
